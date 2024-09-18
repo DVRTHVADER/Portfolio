@@ -23,4 +23,9 @@
     font-size: 0, 5rem;
     transition: all 0.3s ease;
   }
+  .logo {
+    font-size: 1rem;
+    color: forestgreen;
+    transition: all 0.5s ease;
+  }
 }
