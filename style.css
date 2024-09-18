@@ -321,7 +321,6 @@ section {
 }
 .section__text__p1:hover {
   color: forestgreen;
-  font-size: 2rem;
 
   text-shadow: 0 0 10px rgba(2, 85, 35, 0.241);
 }

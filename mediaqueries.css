@@ -5,4 +5,22 @@
   #hamburger-nav {
     display: flex;
   }
+  .title {
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+
+  .section__text {
+    align-self: center;
+    text-align: center;
+    font-size: small;
+  }
+
+  .section__text__p1 {
+    text-align: center;
+    color: black;
+    font-size: 0, 5rem;
+    transition: all 0.3s ease;
+  }
 }
