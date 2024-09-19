@@ -1,0 +1,360 @@
+.desktop {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  overflow: hidden;
+  background-image: url(./img/desktop-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 1438px;
+  height: 2789px;
+  position: relative;
+}
+
+.desktop .ABDELAHID-AWESSOU {
+  position: absolute;
+  width: 520px;
+  height: 40px;
+  top: 23px;
+  left: 28px;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  height: 40px;
+  top: -1px;
+  left: 0;
+  font-family: "Rhodium Libre", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.desktop .frame {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 37px;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  top: 43px;
+  left: 1343px;
+}
+
+.desktop .rectangle {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .rectangle-2 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 5px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+}
+
+.desktop .links {
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+  height: 360px;
+  align-items: center;
+  gap: 46px;
+  position: absolute;
+  top: 188px;
+  left: 1202px;
+  border: 1px solid;
+  border-color: transparent;
+  opacity: 0.2;
+}
+
+.desktop .linkedin {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 61px;
+  background-image: url(./img/linkedin-3.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .github {
+  position: relative;
+  width: 56px;
+  height: 58px;
+}
+
+.desktop .img {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.desktop .text {
+  display: flex;
+  width: 725px;
+  height: 633px;
+  align-items: center;
+  gap: 10px;
+  padding: 648px 120px 359px;
+  position: absolute;
+  top: 98px;
+  left: -75px;
+}
+
+.desktop .notyour-average {
+  position: absolute;
+  width: 839px;
+  height: 587px;
+  top: 0;
+  left: 0;
+}
+
+.desktop .frame-2 {
+  display: flex;
+  flex-direction: column;
+  width: 707px;
+  align-items: center;
+  gap: 26px;
+  position: relative;
+  top: 88px;
+  left: 120px;
+}
+
+.desktop .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  height: 97px;
+  margin-top: -1px;
+  font-family: "Rowdies", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 96px;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+}
+
+.desktop .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Rowdies", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+}
+
+.desktop .software-engineer {
+  position: relative;
+  align-self: stretch;
+  height: 174px;
+  font-family: "Rounded Mplus 1c-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  letter-spacing: 0.1px;
+  line-height: 64px;
+}
+
+.desktop .span {
+  letter-spacing: 0.06px;
+  line-height: 40px;
+}
+
+.desktop .text-wrapper-4 {
+  font-size: 40px;
+  letter-spacing: 0.04px;
+  line-height: 60px;
+}
+
+.desktop .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -218px;
+  margin-bottom: -216px;
+  font-family: "Rounded Mplus 1c-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.desktop .dropd {
+  position: absolute;
+  width: 45px;
+  height: 76px;
+  top: 647px;
+  left: 650px;
+}
+
+.desktop .element-research {
+  height: 744px;
+  top: 1991px;
+  left: 53px;
+  position: absolute;
+  width: 1283px;
+}
+
+.desktop .element-research-2 {
+  height: 800px;
+  top: -29px;
+  left: 0;
+  font-family: "Rhodium Libre", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: 0.1px;
+  line-height: 50px;
+  position: absolute;
+  width: 1283px;
+}
+
+.desktop .text-wrapper-5 {
+  color: #5234cbb5;
+  letter-spacing: 0.03px;
+}
+
+.desktop .text-wrapper-6 {
+  color: #ffffff;
+  letter-spacing: 0.03px;
+}
+
+.desktop .text-wrapper-7 {
+  color: #fff3f3eb;
+  letter-spacing: 0.03px;
+}
+
+.desktop .about {
+  display: flex;
+  flex-direction: column;
+  width: 294px;
+  height: 105px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 89px 62px 21px;
+  position: absolute;
+  top: 775px;
+  left: 526px;
+}
+
+.desktop .text-wrapper-8 {
+  position: absolute;
+  width: 294px;
+  height: 105px;
+  top: -1px;
+  left: 0;
+  font-family: "Rhodium Libre", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+}
+
+.desktop .line {
+  position: relative;
+  width: 157px;
+  height: 1px;
+  margin-top: -1px;
+  margin-bottom: -5px;
+  object-fit: cover;
+}
+
+.desktop .overlap-group {
+  position: absolute;
+  width: 1356px;
+  height: 491px;
+  top: 1386px;
+  left: 53px;
+}
+
+.desktop .frame-3 {
+  display: flex;
+  width: 1009px;
+  height: 491px;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 32px 369px 777px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop .text-wrapper-9 {
+  position: absolute;
+  width: 943px;
+  height: 454px;
+  top: -1px;
+  left: 0;
+  font-family: "Rhodium Libre", Helvetica;
+  font-weight: 400;
+  color: #5234cbb5;
+  font-size: 500px;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+}
+
+.desktop .text-wrapper-10 {
+  position: relative;
+  width: fit-content;
+  font-family: "Rhodium Libre", Helvetica;
+  font-weight: 400;
+  color: #5234cbb5;
+  font-size: 200px;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.desktop .projects {
+  position: absolute;
+  width: 520px;
+  height: 40px;
+  top: 348px;
+  left: 836px;
+}
+
+.desktop .text-wrapper-11 {
+  position: absolute;
+  height: 40px;
+  top: -1px;
+  left: 0;
+  font-family: "Rhodium Libre", Helvetica;
+  font-weight: 400;
+  color: #5234cbb5;
+  font-size: 96px;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.desktop .text-wrapper-12 {
+  position: absolute;
+  width: 1261px;
+  height: 434px;
+  top: 931px;
+  left: 50px;
+  font-family: "Rhodium Libre", Helvetica;
+  font-weight: 400;
+  color: #fff3f3eb;
+  font-size: 48px;
+  letter-spacing: 0.1px;
+  line-height: 55px;
+}

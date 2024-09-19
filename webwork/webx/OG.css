@@ -1,0 +1,58 @@
+.desktop {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.desktop .top {
+  display: flex;
+  justify-content: space-between; /* Ensures space between the two sections */
+  align-items: center; /* Vertically aligns them in the middle */
+  background-image: url(TT.jpeg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%; /* Full-width container */
+  height: 2400px; /* Adjust height as needed */
+  position: relative;
+  padding: 20px;
+}
+
+.desktop .ABDELAHID-AWESSOU {
+  display: flex;
+  font-size: 170%;
+  align-items: center;
+  color: forestgreen;
+  transition: all 0.3s ease;
+  flex: 1; /* Allows this section to take available space */
+}
+
+.desktop .ABDELAHID-AWESSOU:hover {
+  color: rgb(4, 57, 4);
+  filter: blur(2px);
+}
+
+.desktop .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6px;
+  width: 50px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.desktop .rectangle {
+  width: 100%;
+  height: 5px;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.desktop .menu:hover .rectangle {
+  background-color: forestgreen;
+}

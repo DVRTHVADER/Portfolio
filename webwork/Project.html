@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">ABDELAHID AWESSOU</div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#About.html">About</a></li>
+          <li><a href="#Experience.html">Experience</a></li>
+          <li><a href="#Project.html">Project</a></li>
+          <li><a href="#Contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">ABDELAHID AWESSOU</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#About.hmtl" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="#Experience.html" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li><a href="#Project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section id="project_links">
+        <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./Project/project.html')"
+            >
+              Link to GreLarn project
+            </button>
+
+
+  </body>
+</html>
