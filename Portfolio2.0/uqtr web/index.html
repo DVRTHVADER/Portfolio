@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Yatra One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <title>TP1 INF1001</title>
+    <div class="divi">
+      <table>
+        <tr>
+          <td><img src="uqtr.png" alt="uqtr" width="40%" height="auto" /></td>
+          <td>
+            <h1
+              align="right"
+              style="font-family: Yatra One; position: relative"
+            >
+              Loisir pour les étudiant!
+            </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="row">
+      <div class="column1">
+        <table class="tbl1">
+          <tr>
+            <td>
+              <div class="dropdown">
+                <a href="#">
+                  <p class="dropbtn">&nbsp; Accueil</p>
+                </a>
+
+                <div class="dropdown-content">
+                  <a href="#"> 1</a>
+                  <a href="#"> 2</a>
+                  <a href="#"> 3</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="dropdown">
+                <a href="./form.html">
+                  <p class="dropbtn">&nbsp; S'inscrire</p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#"> 1</a>
+                  <a href="#"> 2</a>
+                  <a href="#"> 3</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="dropdown">
+                <a href="./maps.html">
+                  <p class="dropbtn">&nbsp; Maps</p>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#"> 1</a>
+                  <a href="#"> 2</a>
+                  <a href="#"> 3</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column2">
+        <div class="divi">
+          <table class="tbl2" id="table">
+            <h2>Notre but:</h2>
+            <p>
+              Notre site propose aux étudiants désireux de réaliser une ou
+              plusieurs activités de loisir de rejoindre les différentes
+              activités proposées dans la liste suivantes en 3 étapes
+            </p>
+
+            <ul>
+              <li>S'inscrire</li>
+              <li>Choisir une ou plusieurs activités</li>
+              <li>Commencer les activités en group</li>
+            </ul>
+            <p>
+              Les différences activités des groupes sont la responsabilité des
+              professionnelles. Il s'agit de passionnés de domaine qui vous
+              feront découvrir des pans inédits de vos loisirs préfère.
+              Qu'attendez-vous...?. Rejoignez-nous!
+            </p>
+            <h2>Liste des activités disponibles</h2>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let obj = [
+        {
+          "#": 1,
+          Activité: "Natation",
+          Responsable: "Michel Provencher",
+          "Nombre d'inscrits": 7,
+        },
+        {
+          "#": 2,
+          Activité: "Badminton",
+          Responsable: "Daniel Lefevbre",
+          "Nombre d'inscrits": 15,
+        },
+        {
+          "#": 3,
+          Activité: "Randonnée",
+          Responsable: "Catherine Pelletier",
+          "Nombre d'inscrits": 10,
+        },
+        {
+          "#": 4,
+          Activité: "Kayak",
+          Responsable: "Josée Coté",
+          "Nombre d'inscrits": 14,
+        },
+        {
+          "#": 5,
+          Activité: "Velo",
+          Responsable: "Jean-Yves Surroy",
+          "Nombre d'inscrits": 22,
+        },
+        {
+          "#": 6,
+          Activité: "Echecs",
+          Responsable: "Emilie Simard",
+          "Nombre d'inscrits": 11,
+        },
+      ];
+
+      function generateTableHead(table, data) {
+        let thead = table.createTHead();
+        let row = thead.insertRow();
+        for (let key of data) {
+          let th = document.createElement("th");
+          let text = document.createTextNode(key);
+          th.appendChild(text);
+          row.appendChild(th);
+        }
+      }
+
+      function generateTable(table, data) {
+        for (let element of data) {
+          let row = table.insertRow();
+          for (key in element) {
+            let cell = row.insertCell();
+            let text = document.createTextNode(element[key]);
+            cell.appendChild(text);
+          }
+        }
+      }
+
+      let table = document.getElementById("table");
+      let data = Object.keys(obj[0]);
+      generateTableHead(table, data);
+      generateTable(table, obj);
+    </script>
+  </body>
+</html>

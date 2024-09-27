@@ -1,0 +1,478 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(TT.jpeg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 90%;
+  height: 700px;
+  position: relative;
+  padding: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+p {
+  color: blanchedalmond;
+}
+a,
+.btn {
+  transition: all 300ms ease;
+}
+/*DSKTP NAV
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: rgb(254, 254, 254);
+}
+a:hover {
+  color: forestgreen;
+  text-decoration: none;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+  font-size: 2rem;
+  filter: blur(1px);
+  text-shadow: 0 0 10px rgba(2, 85, 35, 0.241);
+}
+.logo {
+  font-size: 1.8rem;
+  color: forestgreen;
+}
+.logo:hover {
+  cursor: default;
+  filter: blur(1px);
+}
+#hamburger-nav {
+  display: none;
+}
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+.menulinks {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: azure;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}*/
+/* Basic reset 
+
+#hamburger-nav {
+  display: none;
+}
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out; /* Add 's' 
+  }
+
+.menu-links {
+  display: none; /* Initially hidden 
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: azure;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+  
+}
+x .menu-links li {
+  margin: 15px 0;
+}
+
+.menu-links a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: rgb(254, 254, 254);
+  font-size: 15px;
+}
+
+.menu-links a:hover {
+  color: forestgreen;
+  text-decoration: none;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+  font-size: 2rem;
+  filter: blur(1px);
+  text-shadow: 0 0 10px rgba(2, 85, 35, 0.241);
+}
+
+/* When the menu is active 
+.menu-links.open{
+  display: flex;
+  max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2){
+   opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:nfirst-child{
+    transform: none;
+}
+
+.hamburger-icon span:nfirst-child{
+    opacity: 1;
+}
+.hamburger-icon span:nfirst-child{
+    transform: none;
+}
+*/
+/* GENERAL */
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: forestgreen;
+  font-size: 2rem;
+  filter: blur(1px);
+  text-shadow: 0 0 10px rgba(2, 85, 35, 0.241);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: forestgreen;
+}
+
+.logo:hover {
+  filter: blur(1px);
+}
+
+/* Hamburger Menu */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Menu Links Hidden Initially */
+.menu-links {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  right: 0;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links.open {
+  display: block;
+  max-height: 300px; /* Increase this if the menu has more items */
+  text-decoration: none;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(90deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  transform: rotate(90deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:last-child {
+  opacity: 0;
+}
+/* Style for the oval container */
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: black;
+  transition: all 0.3s ease;
+}
+.section__text__p1:hover {
+  color: forestgreen;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgba(2, 78, 3, 0.754);
+  color: rgba(239, 239, 239, 0.71);
+}
+
+.btn-color-1:hover {
+  background: rgba(1, 58, 18, 0.793);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgba(1, 44, 13, 0.784) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+/* PROJECTS SECTION */
+/* Featured Work Section */
+.featured-work {
+  position: relative;
+  padding: 40px 20px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Button Container */
+.button-container1 {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Styling */
+.btn12 {
+  padding: 10px 20px;
+  font-size: 18px;
+
+  border: 2px solid #00a65021; /* Removed the extra '00' */
+  background-color: transparent;
+  color: forestgreen;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn13 {
+  padding: 10px 20px;
+  font-size: 18px;
+
+  border: 2px solid #00a65021; /* Removed the extra '00' */
+  background-color: transparent;
+  color: forestgreen;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+.btn12:hover {
+  background-color: #007122;
+  box-shadow: 0 4px 15px rgba(0, 92, 55, 0.35);
+  transform: scale(1.05);
+  color: white;
+}
+.btn13:hover {
+  background-color: #762700db;
+  border: 2px solid #76270032;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 92, 55, 0.35);
+  transform: scale(1.09);
+}
+
+.fade {
+  opacity: 0;
+}
+#main-heading {
+  font-family: "Lora", serif; /* Natural-looking font */
+  align-items: center;
+  font-size: 3rem;
+
+  color: #05a263a1; /* White text to contrast with the background */
+  text-shadow: 2px 2px 4px rgba(7, 39, 0, 0.165); /* Add a subtle shadow for readability */
+  transition: opacity 5s ease-in-out;
+  opacity: 1;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .button-container1 {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    width: 80%; /* Ensure buttons don't stretch too much */
+  }
+}
