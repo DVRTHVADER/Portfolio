@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">ABDELAHID AWESSOU</div>
+
+      <div>
+        <ul class="nav-links">
+          <li>
+            <a href="#Home.html" onclick="window.open('./Home.html')">Home</a>
+          </li>
+          <li>
+            <a
+              href="#Experience.html"
+              onclick="window.open('./Experience.html')"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#Project.html" onclick="window.open('./Project.html')"
+              >Project</a
+            >
+          </li>
+          <li><a href="#Contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">ABDELAHID AWESSOU</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#Home.hmtl" onclick="toggleMenu()">Home</a></li>
+          <li>
+            <a href="#Experience.html" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li><a href="#Project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="featured-work">
+      <h1 id="main-heading">HTML</h1>
+
+      <div class="button-container1">
+        <button
+          class="btn12 btn-project"
+          onclick="window.open('./Project/project.html', '_blank')"
+          aria-label="Link to GreLarn project"
+        >
+          GreLarn Project
+        </button>
+      </div>
+
+      <div class="button-container1">
+        <button
+          class="btn13 btn-project"
+          onclick="window.open('./uqtr web/index.html')"
+          aria-label="Link to UQTR web project"
+        >
+          UQTR Web Project
+        </button>
+      </div>
+      <div class="button-container1">
+        <button
+          class="btn14 btn-project"
+          onclick="window.open('./Abdel/Troy.html')"
+          aria-label="Link to UQTR web project"
+        >
+          Abdel webx
+        </button>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      // Target the h1 element by its ID
+      const heading = document.getElementById("main-heading");
+
+      // List of texts to display in loop
+      const texts = [
+        "CSS",
+        "C",
+        "C++",
+        "JAVA",
+        "AZURE",
+        "RUST",
+        "GIT",
+        "More... ",
+      ];
+
+      // Counter to keep track of which text to display next
+      let counter = 0;
+
+      function changeText() {
+        // Fade out
+        heading.classList.add("fade");
+
+        // After 3 seconds (fade-out time), change the text
+        setTimeout(function () {
+          // Update textContent with the next text in the array
+          heading.textContent = texts[counter];
+
+          // Reset the counter to loop through the text array
+          counter = (counter + 1) % texts.length;
+
+          // Fade back in
+          heading.classList.remove("fade");
+        }, 3000); // Matches the fade-out time
+      }
+
+      // Start the loop with an interval of 8 seconds
+      setInterval(changeText, 5000);
+
+      // Initial fade change after the first 3 seconds
+      setTimeout(changeText, 2000);
+    </script>
+  </body>
+</html>
