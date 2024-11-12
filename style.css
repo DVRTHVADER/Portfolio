@@ -1,4 +1,33 @@
-/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("TT.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh; /* Use full viewport height */
+  position: relative;
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: blanchedalmond;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+/* GENERAL 
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +37,8 @@ body {
   background-image: url(TT.jpeg);
   background-size: cover;
   background-position: 50% 50%;
-  width: 100%;
-  height: 1500px;
+  width: 90%;
+  height: 800px;
   position: relative;
   padding: 20px;
 }
@@ -321,8 +350,6 @@ section {
 }
 .section__text__p1:hover {
   color: forestgreen;
-
-  text-shadow: 0 0 10px rgba(2, 85, 35, 0.241);
 }
 
 .section__text__p2 {
@@ -388,4 +415,112 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+/* PROJECTS SECTION */
+/* Featured Work Section */
+.featured-work {
+  position: relative;
+  padding: 40px 20px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Button Container */
+.button-container1 {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Styling */
+.btn12 {
+  padding: 10px 20px;
+  font-size: 18px;
+
+  border: 2px solid #00a65021; /* Removed the extra '00' */
+  background-color: transparent;
+  color: forestgreen;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn13 {
+  padding: 10px 20px;
+  font-size: 18px;
+
+  border: 2px solid #00a65021; /* Removed the extra '00' */
+  background-color: transparent;
+  color: forestgreen;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn14 {
+  padding: 10px 20px;
+  font-size: 18px;
+
+  border: 2px solid #6706486e; /* Removed the extra '00' */
+  background: linear-gradient(rgba(185, 3, 118, 0.305), #92073557),
+    /* semi-transparent overlay */ url("AG.PNG");
+  color: rgba(114, 0, 85, 0.473);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+.btn12:hover {
+  background-color: #007122;
+  box-shadow: 0 4px 15px rgba(0, 92, 55, 0.35);
+  transform: scale(1.05);
+  color: white;
+}
+.btn13:hover {
+  background-color: #762700db;
+  border: 2px solid #76270032;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 92, 55, 0.35);
+  transform: scale(1.09);
+}
+.btn14:hover {
+  background-color: #76004f88;
+  border: 2px solid #91064732;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 92, 55, 0.35);
+  transform: scale(1.09);
+}
+
+.fade {
+  opacity: 0;
+}
+#main-heading {
+  font-family: "Lora", serif; /* Natural-looking font */
+  align-items: center;
+  font-size: 3rem;
+
+  color: #05a263a1; /* White text to contrast with the background */
+  text-shadow: 2px 2px 4px rgba(7, 39, 0, 0.165); /* Add a subtle shadow for readability */
+  transition: opacity 5s ease-in-out;
+  opacity: 1;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .button-container1 {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    width: 80%; /* Ensure buttons don't stretch too much */
+  }
 }
