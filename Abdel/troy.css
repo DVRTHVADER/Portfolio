@@ -11,6 +11,7 @@
 body {
   font-family: "Just Another Hand", serif;
   background-image: url("trey.PNG");
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
