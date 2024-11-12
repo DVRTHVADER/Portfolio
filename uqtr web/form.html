@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Yatra One" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <title>TP1 INF1001</title>
+    <div class="divi">
+        <table>
+            <tr>
+                <td><img src="uqtr.png" alt="uqtr" width="40%" height="auto" /></td>
+                <td>
+                    <h1 align="right" style="font-family: Yatra One; position: relative;">Loisir pour les étudiant!</h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="column1">
+            <table class="tbl1">
+                <tr>
+                    <td>
+                        <div class="dropdown">
+                            <a href="./index.html">
+                                <p class="dropbtn">&nbsp; Accueil</p>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#"> 1</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="dropdown">
+                            <a href="#">
+                                <p class="dropbtn">&nbsp; S'inscrire</p>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#"> 1</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="dropdown">
+                            <a href="./maps.html">
+                                <p class="dropbtn">&nbsp;Localiser une activité</p>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#"> 1</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="column2">
+            <div class="divi">
+                <form action="/action_page.php">
+                    <label for="pin1">Nom</label><br />
+                    <input type="text" id="pin2" required /><br />
+
+                    <label for="pin2">Prénom</label><br />
+                    <input type="text" id="pin2" required /><br />
+
+                    <label for="pin3">Date</label><br />
+                    <input type="date" id="pin3" required /><br />
+                    <br />
+
+                    <input type="radio" name="gender" value="male" checked /> Male <input type="radio" name="gender" value="female" required /> Female<br />
+                    <br />
+
+                    <label for="pin4">Activité</label><br />
+                    <select id="pin4" name="list" form="carform">
+                            <option value="Natation">Natation</option>
+                            <option value="Volé">Badminton</option>
+                            <option value="Volé">Randonnée</option>
+                            <option value="Volé">Kayak</option>
+                            <option value="Volé">Velo</option>
+                            <option value="Volé">Echecs</option>
+                        </select>
+                    <br />
+
+                    <label for="w3review">Motivation</label><br />
+                    <textarea id="w3review" name="w3review" rows="6" cols="50"></textarea>
+                    <br />
+
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

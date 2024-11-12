@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRELARN</title>
+    <link rel="icon" type="image/png" href="routine.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c7e4c7;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #c7e4c7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #quote-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #quote-btn:hover {
+            background-color: #45a049;
+            color: #fff;
+        }
+        .subscribeCheckbox{
+          place-content: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="contactForm">
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="name">first Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="projectDescription">Project Description:</label>
+        <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+
+        <button type="button" id="quote-btn">Get a Quote</button>
+        
+        <label for="subscribeCheckbox">Subscribe for Confirmation:</label>
+        <input type="checkbox" id="subscribeCheckbox" name="subscribeCheckbox">
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const quoteBtn = document.getElementById("quote-btn");
+
+        quoteBtn.addEventListener("mouseenter", () => {
+            quoteBtn.style.backgroundColor = "#45a049";
+            quoteBtn.style.color = "#fff";
+        });
+
+        quoteBtn.addEventListener("mouseleave", () => {
+            quoteBtn.style.backgroundColor = "#4CAF50";
+            quoteBtn.style.color = "#fff";
+        });
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Validate the form (you can add more complex validation logic here)
+            const isValid = validateForm();
+
+            if (isValid) {
+                // Send confirmation text to the entered email (simulated here)
+                const emailInput = document.getElementById("email");
+                const isSubscribed = document.getElementById("subscribeCheckbox").checked;
+
+                const confirmationMessage = isSubscribed
+                    ? `Thank you, ${emailInput.value}, for subscribing!`
+                    : `Thank you, ${emailInput.value}, for your submission!`;
+
+                alert(confirmationMessage);
+
+                // Reset the form
+                contactForm.reset();
+            }
+        });
+
+        function validateForm() {
+            // Simple validation logic (you can add more complex validation here)
+            const inputs = contactForm.querySelectorAll("input[required], textarea[required]");
+
+            let isValid = true;
+
+            inputs.forEach(input => {
+                if (!input.checkValidity()) {
+                    alert(`Please enter a valid ${input.name}`);
+                    isValid = false;
+                }
+            });
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
