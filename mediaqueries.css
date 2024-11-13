@@ -1,20 +1,35 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   #desktop-nav {
     display: none;
+  }
+  body {
+    width: 90%;
+    height: 90vh;
+  }
+  .nav {
+    flex-direction: row;
   }
   #hamburger-nav {
     display: flex;
   }
   .title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     transition: all 0.5s ease;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
   }
 
   .section__text {
     align-self: center;
     text-align: center;
     font-size: small;
+    font-size: 0.8rem;
   }
 
   .section__text__p1 {
@@ -27,5 +42,11 @@
     font-size: 1rem;
     color: forestgreen;
     transition: all 0.5s ease;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
   }
 }
