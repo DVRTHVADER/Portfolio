@@ -1,9 +1,9 @@
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 800px) {
   #desktop-nav {
     display: none;
   }
   body {
-    width: 90%;
+    width: 80%;
     height: 90vh;
   }
   .nav {
