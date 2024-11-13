@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Times New Roman", Times, serif;
@@ -9,8 +12,8 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
-  height: 100vh; /* Use full viewport height */
+  width: 95%;
+  height: 98vh; /* Use full viewport height */
   position: relative;
   padding: 20px;
 }
